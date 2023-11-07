@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/Form";
+import Find from "./assets/find-icon.png"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex w-screen h-screen items-center justify-center bg-gray-700">
+      <div className="flex-col md:flex-row py-5 md:py-0 flex gap-5 md:w-[650px] md:h-[300px] border bg-white border-[#999999] rounded-lg items-center px-10">
+      <img src={Find} className="h-[230px]" alt="FindImage"/>
+      <Form />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
